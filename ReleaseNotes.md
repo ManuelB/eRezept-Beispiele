@@ -1,3 +1,15 @@
+## Release 1.1.0 - FHIR-Beispiele zum E-Rezept
+- Update Profile Versions
+- Edit Changes (Binary-Quittung) Profile TA7_Sammelrechnung_Bundle
+- Fix Canonical-URL (DAV-PR-ERP-Abgabeinformationen) - eAbgabedaten
+- Update eAbgabedaten-StyleSheet (Add Zusatzattribut 15)
+
+## Release 1.0.9 - FHIR-Beispiele zum E-Rezept
+- Update eAbrechnungsdaten to Release 1.0.6
+- Edit fix Link Verordnung Stylesheet
+- Edit MedicationDispense Einheit (amount.numerator.unit)
+- Edit delete Vertragskennzeichen (Rezeptur eAbgabedaten)
+
 ## Release 1.0.8 - FHIR-Beispiele zum E-Rezept
 - Add TA7-Bsp Sammelrechnung pro Kasse (TK) und Dateisplit
 - Update TA7 Bsp -> IKs (Empfänger / Kostenträger)

@@ -1,7 +1,7 @@
 <MedicationDispense xmlns="http://hl7.org/fhir">
   <id value="5b2f09be-9fd8-4fc1-b916-cd86ba5d246c"/>
   <meta>
-    <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense"/>
+    <profile value="https://gematik.de/fhir/StructureDefinition/ErxMedicationDispense|1.1.1"/>
     <tag>
       <display value="Beispiel MedicationDispense PZN Bsp Impfstoff V1"/>
     </tag>
@@ -13,7 +13,7 @@
     <Medication>
       <id value="8490dde3-2ed0-480d-9cb3-a8937eea6b1e"/>
       <meta>
-        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.0.1"/>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_ERP_Medication_PZN|1.0.2"/>
       </meta>
       <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_ERP_Medication_Category">
         <valueCoding>
@@ -30,9 +30,9 @@
       <code>
         <coding>
           <system value="http://fhir.de/CodeSystem/ifa/pzn"/>
-          <code value="16938263"/>
+          <code value="10259495"/>
         </coding>
-        <text value="GONAL-f 150 I.E./0,25 ml Inj.Lsg."/>
+        <text value="FSME IMMUN 0.5ML ERW O KA, 1 St"/>
       </code>
       <form>
         <coding>
@@ -43,14 +43,14 @@
       <amount>
         <numerator>
           <value value="1"/>
-          <unit value="{Package}"/>
+          <unit value="St"/>
         </numerator>
         <denominator>
           <value value="1"/>
         </denominator>
       </amount>
       <batch>
-        <lotNumber value="A9876543210-78"/>
+        <lotNumber value="A9876543210123-45678"/>
         <expirationDate value="2022-12-31"/>
       </batch>
     </Medication>
@@ -62,7 +62,7 @@
   <status value="completed"/>
   <medicationReference>
     <reference value="#8490dde3-2ed0-480d-9cb3-a8937eea6b1e"/>
-    <display value="GONAL-f 150 I.E./0,25 ml Inj.Lsg."/>
+    <display value="FSME IMMUN 0.5ML ERW O KA, 1 St"/>
   </medicationReference>
   <subject>
     <identifier>
