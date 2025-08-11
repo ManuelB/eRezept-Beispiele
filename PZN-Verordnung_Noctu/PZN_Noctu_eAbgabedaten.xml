@@ -1,7 +1,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="ee6374b2-3907-45cd-8941-d7761c4bc752"/>
   <meta>
-    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle|1.2"/>
+    <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenBundle|1.4"/>
     <tag>
       <display value="Beispiel für Abgabedaten für eine PZN-Verordnung (Noctu) (690a7f01-058e-492a-b1dc-d6d8c8a30a59)"/>
     </tag>
@@ -10,18 +10,18 @@
     </tag>
   </meta>
   <identifier>
-    <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
+    <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
     <value value="160.100.000.000.003.33"/>
   </identifier>
   <type value="document"/>
-  <timestamp value="2021-05-27T22:20:00Z"/>
+  <timestamp value="2025-01-27T22:20:00Z"/>
   <entry>
     <fullUrl value="urn:uuid:307dced0-6e9c-4032-a9a5-b7e985f24669"/>
     <resource>
-      <Composition>
+       <Composition xmlns="http://hl7.org/fhir">
         <id value="307dced0-6e9c-4032-a9a5-b7e985f24669"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.2"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-AbgabedatenComposition|1.4"/>
         </meta>
         <status value="final"/>
         <type>
@@ -30,7 +30,7 @@
             <code value="ERezeptAbgabedaten"/>
           </coding>
         </type>
-        <date value="2021-05-27T22:20:00Z"/>
+        <date value="2025-01-27T22:20:00Z"/>
         <author>
           <reference value="urn:uuid:2b379f7d-6d03-4415-a7f6-6390f76b8138"/>
         </author>
@@ -53,14 +53,14 @@
   <entry>
     <fullUrl value="urn:uuid:2b379f7d-6d03-4415-a7f6-6390f76b8138"/>
     <resource>
-      <Organization>
+       <Organization xmlns="http://hl7.org/fhir">
         <id value="2b379f7d-6d03-4415-a7f6-6390f76b8138"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Apotheke|1.2"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Apotheke|1.4"/>
         </meta>
         <identifier>
-          <system value="http://fhir.de/NamingSystem/arge-ik/iknr"/>
-          <value value="123456789"/>
+          <system value="http://fhir.de/sid/arge-ik/iknr"/>
+          <value value="308412345"/>
         </identifier>
         <name value="CIDA-Apotheke"/>
         <address>
@@ -83,10 +83,10 @@
   <entry>
     <fullUrl value="urn:uuid:715dc01a-db48-4b55-b966-cba384c5eb56"/>
     <resource>
-      <MedicationDispense>
+       <MedicationDispense xmlns="http://hl7.org/fhir">
         <id value="715dc01a-db48-4b55-b966-cba384c5eb56"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen|1.2"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abgabeinformationen|1.4"/>
         </meta>
         <extension url="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-EX-ERP-Abrechnungszeilen">
           <valueReference>
@@ -107,7 +107,7 @@
         </performer>
         <authorizingPrescription>
           <identifier>
-            <system value="https://gematik.de/fhir/NamingSystem/PrescriptionID"/>
+            <system value="https://gematik.de/fhir/erp/NamingSystem/GEM_ERP_NS_PrescriptionId"/>
             <value value="160.100.000.000.003.33"/>
           </identifier>
         </authorizingPrescription>
@@ -117,17 +117,17 @@
             <code value="Abgabeinformationen"/>
           </coding>
         </type>
-        <whenHandedOver value="2021-05-27"/>
+        <whenHandedOver value="2025-01-27"/>
       </MedicationDispense>
     </resource>
   </entry>
   <entry>
     <fullUrl value="urn:uuid:4a64b1f7-942d-42c1-be2a-6b34dbe35008"/>
     <resource>
-      <Invoice>
+       <Invoice xmlns="http://hl7.org/fhir">
         <id value="4a64b1f7-942d-42c1-be2a-6b34dbe35008"/>
         <meta>
-          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abrechnungszeilen|1.2"/>
+          <profile value="http://fhir.abda.de/eRezeptAbgabedaten/StructureDefinition/DAV-PR-ERP-Abrechnungszeilen|1.4"/>
         </meta>
         <status value="issued"/>
         <type>
@@ -263,7 +263,7 @@
                 </valueCodeableConcept>
               </extension>
               <extension url="DatumUhrzeit">
-                <valueDateTime value="2021-05-27T22:10:00.0Z"/>
+                <valueDateTime value="2025-01-27T22:10:00.0Z"/>
               </extension>
               <extension url="Schluessel">
                 <valueBoolean value="true"/>
